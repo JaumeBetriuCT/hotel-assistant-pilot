@@ -21,4 +21,4 @@ Once deployed the app will be accessible from any device using a navigator.
 ## Open AI api-keys management
 To add the Open AI key create a folder in the repo with the name .streamlit and inside crate a file named secrets.toml and add the key with the format:
 
-OPENAI_API_KEY="sk-..."
+OPENAI_API_KEY="sk-..."p
