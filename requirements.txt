@@ -3,3 +3,4 @@ semantic-kernel
 streamlit
 pandas
 SQLAlchemy
+pyodbc
