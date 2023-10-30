@@ -2,3 +2,4 @@ Pillow
 semantic-kernel
 streamlit
 pandas
+SQLAlchemy
