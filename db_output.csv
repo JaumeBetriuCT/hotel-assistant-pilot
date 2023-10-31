@@ -1,2 +1,4 @@
-,Tipo_Habitacion,Fecha_Entrada,Fecha_Salida
-0,Junior Suite,2023-11-02,2023-11-13
+,Tipo_Habitacion,Link,Precio
+0,Doble Vista Mar Frontal,https://www.hotelplayagolf.com/es/HotelPlayaGolfRoomDobleVistaMarFrontal/,217€/noche
+1,Doble Vista Mar Lateral,https://www.hotelplayagolf.com/es/hotelplayagolf/HotelPlayaGolfRoomDobleVistaMar/,208€/noche
+2,Doble Vista Mar Lateral,https://www.hotelplayagolf.com/es/hotelplayagolf/HotelPlayaGolfRoomDobleVistaMar/,190€/noche
