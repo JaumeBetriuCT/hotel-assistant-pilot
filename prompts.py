@@ -47,8 +47,8 @@ SQL_GENERATION_TEMPLATE_SK = """
     No incluyas ningún texto excepto la query de SQL generada.
     Ejemplo:
     Pregunta: ¿Dispone el hotel de habitaciones con vistas al mar?
-    SELECT Tipo_Habitacion, Link
-        FROM habitaciones
+    SELECT h.Tipo_Habitacion, h.Link
+        FROM habitaciones AS h
         WHERE Tipo_Habitacion LIKE '%Mar%'
     Final del Ejemplo.
     La pregunta es:
@@ -60,6 +60,7 @@ SQL_QA_TEMPLATE_SK = """
     La parte de información contiene la información proporcionada que debe utilizar para construir una respuesta.
     La información proporcionada es autorizada, nunca debe dudarla ni intentar utilizar su conocimiento interno para corregirla.
     Haga que la respuesta suene como una respuesta a la pregunta. No menciones que basaste el resultado en la información proporcionada.
+    Da una respuesta por puntos siempre que sea posible.
     Si la información proporcionada está vacía, diga que no sabe la respuesta.
     La información esta proporcionada en el formato Dataframe de pandas.
     Información:

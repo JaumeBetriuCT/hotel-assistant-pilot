@@ -4,17 +4,18 @@ from semantic_query_engine import SemanticQueryEngine
 from PIL import Image
 import base64
 
-from streamlit_frontend import show_chat_history, set_background
+from streamlit_frontend import show_chat_history, set_background, set_title
 
 def main():
 
-    dqs_logo = Image.open('images/dqs_logo.png')
+    hotel_logo = Image.open('images/hotel_logo.png')
     gpt_logo = Image.open("images/Chat_gpt_logo.png")
     icon = Image.open("images/dqs_icon.jpeg")
     sql_logo = Image.open("images/sql_logo.png")
 
     st.set_page_config(page_icon=icon, page_title="Hotel assistant")
     set_background()
+    set_title(hotel_logo)
 
     # Define the chat history:
     if "chat_history" not in st.session_state:
@@ -25,10 +26,6 @@ def main():
         st.session_state.first_refresh_session = True
     else:
         st.session_state.first_refresh_session = False
-
-    st.title("Asistente Hotel Playa Golf")
-
-    st.image(dqs_logo)
 
     # Prepare the assitant if it is the first session:
     if st.session_state.first_refresh_session:
@@ -54,11 +51,11 @@ def main():
             # Store the question and the response to the chat memory of the session:
             st.session_state.chat_history.append({"user": input_text, "avatar": response})
 
-    col1, col2 = st.columns(2)
-    with col1:
+    col3, col4 = st.columns(2)
+    with col3:
         st.write("Data hosted in:")
         st.image(sql_logo, width=250)
-    with col2:
+    with col4:
         st.write("Powered by:")
         st.image(gpt_logo, width=250)
 

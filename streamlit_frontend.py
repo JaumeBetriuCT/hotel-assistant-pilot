@@ -1,5 +1,17 @@
 import streamlit as st
 
+def set_title(hotel_logo):
+    col1, col2 = st.columns([3,1])
+    with col1:
+        st.title("Asistente Hotel Playa Golf")
+        st.subheader("Tu asistente personal para consultas y reservas de hotel")
+
+    with col2:
+        # Add padding so the picture goes down:
+        st.write("   ")
+        st.write("   ")
+        st.image(hotel_logo, width=250)
+
 def show_chat_history(avatar_icon) -> None:
     # Get the history:
     chat_history = st.session_state.chat_history
@@ -28,8 +40,8 @@ def set_background():
          f"""
          <style>
          .stApp {{
-             background: url("https://i.pinimg.com/1200x/94/32/6c/94326cc12d92893263a4d4139aff60de.jpg");
-             background-size: cover
+             background: url("https://img.freepik.com/free-photo/elegant-white-background-with-blue-wave-lines_1017-32741.jpg");
+             background-size: 100% 113%
          }}
          </style>
          """,
@@ -38,5 +50,5 @@ def set_background():
     
     # To find simillar images to the one in the background type in google images: "sky transparent background"
 
-    # https://i.pinimg.com/736x/4b/2a/9b/4b2a9bfe892f32fcda6ed95cc6b57f98.jpg
-    # https://i.pinimg.com/1200x/94/32/6c/94326cc12d92893263a4d4139aff60de.jpg
+    # https://img.freepik.com/premium-vector/abstract-grunge-background_660067-262.jpg?size=626&ext=jpg
+    # 

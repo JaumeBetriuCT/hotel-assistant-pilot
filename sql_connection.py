@@ -42,7 +42,7 @@ class AzureSQLDatabaseConnection:
             La tabla informacion_general contiene las columnas: 'ID', 'Descripcion', 'Direccion', 'Contacto' 
             La tabla habitaciones contiene las columnas: 'ID_Habitacion', 'Tipo_Habitacion', 'Descripcion', 'Link'.
             La tabla disponibilidad contiene las habitaciones disponibles, con las columnas 'ID_Habitacion', 'Tipo_Habitacion', 'Fecha_Entrada, 'Fecha_Salida' y 'Precio'. 
-            La tabla instalaciones contiene las instalaciones del hotel, con las columnas: 'ID_Instalacion', 'Nombre_Instalacion', 'Descripcion'
+            La tabla instalaciones contiene las instalaciones del hotel, con las columnas: 'ID_Instalacion', 'Nombre_Instalacion', 'Descripcion', 'Horarios'
             La tabla servicios contiene los servicios del hotel con las columnas: 'ID_Servicio', 'Nombre_Servicio'
             La tabla servicios_por_habitacion contiene los servicios de cada habitación, con las columnas: 'ID_Habitacion', 'ID_Servicio'
             Relaciones entre tablas:
