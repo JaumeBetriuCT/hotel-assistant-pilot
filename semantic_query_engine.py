@@ -24,8 +24,8 @@ class SemanticQueryEngine:
         self.api_key = st.secrets["OPENAI_API_KEY"]
 
         # Add the model to the kernel:
-        self.kernel_sql.add_chat_service("sql", OpenAIChatCompletion("gpt-3.5-turbo-16k", self.api_key))
-        self.kernel_qa.add_chat_service("qa", OpenAIChatCompletion("gpt-3.5-turbo-16k", self.api_key))
+        self.kernel_sql.add_chat_service("sql", OpenAIChatCompletion("gpt-3.5-turbo", self.api_key))
+        self.kernel_qa.add_chat_service("qa", OpenAIChatCompletion("gpt-3.5-turbo", self.api_key))
 
         # Create the context for the sql generator, add the description of the database and the current date:
         self.context_sql = self.kernel_sql.create_new_context()
